@@ -1450,7 +1450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5948053556317095481, guid: 5ad02daa81e03584ba5f2fe745b68c46, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 107.97049
+      value: 6.19
       objectReference: {fileID: 0}
     - target: {fileID: 5948053556317095481, guid: 5ad02daa81e03584ba5f2fe745b68c46, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1501,7 +1501,6 @@ GameObject:
   - component: {fileID: 268020026}
   - component: {fileID: 268020025}
   - component: {fileID: 268020024}
-  - component: {fileID: 268020027}
   - component: {fileID: 268020028}
   m_Layer: 0
   m_Name: Main Camera
@@ -1576,19 +1575,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &268020027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 268020023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e6c3420e78952340be58d028f4d2460, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &268020028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3009,7 +2995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &495152502
 Transform:
   m_ObjectHideFlags: 0
@@ -3018,7 +3004,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 495152501}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.74, z: 0}
+  m_LocalPosition: {x: 0, y: 0.756, z: 0}
   m_LocalScale: {x: 1, y: 0.43453127, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3045,7 +3031,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 495152501}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
