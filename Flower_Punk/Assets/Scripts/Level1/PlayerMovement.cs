@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     public bool isJumping;
 
     private Rigidbody2D rb;
+
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
         Move = Input.GetAxis("Horizontal");
 
         rb.velocity = new Vector2(speed * Move, rb.velocity.y);
+
+        animator.SetFloat("Speed", Mathf.Abs(Move));
 
         if(Input.GetButtonDown("Jump") && isJumping == false)
         {
@@ -42,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
         if(other.gameObject.CompareTag("Ground"))
         {
             isJumping = false;
+            animator.SetBool("IsJumping", false);
         }
     }
 
@@ -51,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
         if(other.gameObject.CompareTag("Ground"))
         {
             isJumping = true;
+            animator.SetBool("IsJumping", true);
         }
     }
 
